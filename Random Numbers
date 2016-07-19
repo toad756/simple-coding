@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+//*The time always changes, so there's a new number every time.*//
+int main() 
+{
+srand(time(NULL));
+
+int number = 0 + rand()%9;
+printf("The number is %d\n", number);
+}
+
+
+
