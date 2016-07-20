@@ -4,6 +4,6 @@ int main()
 {
 float a = 1.123465;
 double b = 1.1234657619203423;
-printf("a is %d and b is %d\n", a, b);
+printf("a is %f and b is %.16f\n", a, b);
 return 0;
 }
