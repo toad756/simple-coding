@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+	int a = 5;
+	int *p; //*pointer to a*//
+	//*The * has the value of the address (&) it is said to have.*//
+	
+	p = &a; //*address of a*//
+	
+	printf("%d", *p //*value at p*//);
+	
+	return 0;
+}
