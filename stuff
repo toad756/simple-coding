@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include<string.h>
+struct person{
+	char name[500];
+	int age;
+	int height;
+	int weight;
+	char likes[500];
+};
+
+void print_person(struct person *p);
+
+int main()
+{
+	struct person example_person = { "Joe", 6, 30, 62, "Planes"};
+	
+	print_person(&example_person);
+	example_person.age = 10;
+	strcpy(example_person.likes,"video games");
+	print_person(&example_person);
+	
+	printf("Hello! I am %s! I am %d and I like %s!\n", example_person.name, 
+	example_person.age, example_person.likes);
+
+    return 0;
+}
+
+void print_person(struct person *p)
+{
+    printf("Name: %s\nAge: %d\nHeight: %d\nWeight: %d\nI like %s\n",
+    p->name, p->age, p->height, p->weight);
+}
