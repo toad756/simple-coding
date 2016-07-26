@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include<string.h>
+struct person{
+	char name[500];
+	int age;
+	int height;
+	int weight;
+};
+int main()
+{
+struct person example = {"Bob", 21, 70, 146.2}
+
+printf("I'm %s and i am %d years old", example.name, example.age);
+return 0;
+}
