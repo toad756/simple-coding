@@ -28,5 +28,5 @@ int main()
 void print_person(struct person *p)
 {
     printf("Name: %s\nAge: %d\nHeight: %d\nWeight: %d\nI like %s\n",
-    p->name, p->age, p->height, p->weight);
+    p->name, p->age, p->height, p->weight, p->likes);
 }
